@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #9bd130;
-  --primary-color-dark: #82b027;
-  --primary-color-light: #eaffc2;
-  --secondary-color: #852569;
-  --secondary-color-dark: #6b1853;
+  --primary-color: #bca867;
+  --primary-color-dark: #aa913e;
+  --primary-color-light: #e5ddc4;
+  --secondary-color: #f7ad16;
+  --secondary-color-dark: #d79103;
   --blue-dark: #0f2663;
   --base-color: #555;
   --error-color: red;
@@ -143,8 +143,8 @@ h4 {
 }
 
 .profile-img {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  /* -webkit-transform: scaleX(-1); */
+  /* transform: scaleX(-1); */
   max-width: 100%;
   height: auto;
 }
@@ -358,7 +358,7 @@ mark {
 }
 
 .last-presentation-text {
-  color: var(--secondary-color);
+  color: var(--secondary-color-dark);
 }
 
 .past-presentation {
