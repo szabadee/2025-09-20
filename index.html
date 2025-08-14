@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICS - Jubileumi előadás-sorozat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/regform-header-2025-05-10.png" alt="jubileumi előadás-sorozat">
+        </div>
+        <div class="container-text">
+
+            <h2>Szakmai előadás-sorozat</h2>
+            <span><i>Tudással az egészségünkért!</i></span>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 d-lg-flex text-center">
+                    <img src="images/kautzky-szemok-adrienn-2025-05-10.png" alt="Kautzky-Szemők Adrienn"
+                        class="profile-img">
+                </div>
+                <div class="col-lg-9 col-sm-12 d-lg-flex text-lg-left text-center pt-10">
+                    <span id="presenter" class="align-self-center"><strong>Előadó: </strong><br>
+                        <span class="text-purple"><strong>Kautzky-Szemők Adrienn</strong></span><br>
+                        <i>Agrár-és Élettudományi Mérnök</i><br>
+                        <i>Okl. Természetgyógyász</i><br>
+                        <i>Fitoterapeuta-Reflexológus</i>
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 d-lg-flex">
+                    <span id="eventName" class=""><strong>5. Előadás címe:</strong>
+                        <h4 class="text-purple"><strong>Well-aging - Tudatos fiatalság kívül-belül</strong>
+                        </h4>
+                        <span id="">Régóta foglalkoztat minket a dolog, hogy találjunk egy jobb szót, mint az
+                            anti-aging, hiszen az időt nem lehet megállítani, sem megfordítani, nem lehet nem öregedni
+                            és talán felesleges is ellenállni. Az idő múlása ugyanis az élet része. Az öregedésgátlás
+                            káros retorikát is tartalmazhat, amely nem hajlandó elfogadni, hogy mindenki öregszik és
+                            idővel még jobban öregszik. Egyre több tudományos eredmény igazolni látszik, hogy életmódunk
+                            minimális megváltoztatásával, a well-aging módszerével ez a vágyálom megvalósulhat. A
+                            koncepció a test harmóniáját igyekszik megteremteni, ezzel előzve meg a krónikus
+                            betegségeket. A well-aging fő célkitűzése az egészség, és a szellemi-testi rugalmasság minél
+                            tovább tartó megőrzése.
+                        </span>
+                </div>
+                <div class="col-lg-6 d-lg-flex pt-lg-0 pt-20">
+                    <span><strong><span class="d-block text-center highlight">Témához kapcsolódó
+                                termékek:</span></strong>
+                        <div class="d-flex text-center">
+                            <img src="images/termekajanlo-25-05-10.png" alt="NICS termékek" class="products-img">
+                        </div>
+                        <br>
+                        <span class="d-block text-center text-orange fs-14">
+                            Weight Control<br>
+                            Algae 4 All<br>
+                            Detox<br>
+                            Collagen Hyaluron<br>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <br>
+            <span id="eventDate"><strong>Időpont: </strong>
+                <br>
+                <h4 class="text-purple"><strong>2025. május 10. (szombat) 11:00 - 13:00</strong></h4>
+            </span>
+            <br>
+            <span id="eventDate"><strong>Helyszín: </strong>
+                <br>
+                1054 Budapest, Szabadság tér 7.<br>
+                Bank Center - Platina torony I. em. (Konferenciaterem)
+            </span>
+            <br>
+            <br>
+            <div class="row" id="infoSection">
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <p class="nonreg-status-box" id="statusBox">
+                        <span><strong>Regisztráló neve:</strong></span><br>
+                        <span id="customerName" class="nonreg-customer-name"></span>
+                        <br>
+                        <span id="regStatusInfo">
+                            <strong>Regisztráció állapota:</strong><br>
+                            <span id="regStatus"></span>
+                            <span class="material-icons text-orange" id="regIcon">error</span>
+                        </span>
+                    </p>
+                </div>
+                <div class="order-lg-1 order-0 col-lg-6 col-12 pb-20">
+                    <span class="d-block pb-10"><strong>Regisztráció határideje:</strong><br>
+                        2025. május 10. (szombat) - 08:00<br></span>
+                    <!-- Countdown Timer -->
+                    <div class="timer-container">
+
+                        <div class="countdown-timer" id="countdownTimer" data-date="2000-01-01" data-time="23:59:00">
+                            <div class="time-box">
+                                <div class="number-wrapper">
+                                    <span class="current days">00</span>
+                                    <span class="next days">00</span>
+                                </div>
+                                <span class="label">Nap</span>
+                            </div>
+                            <div class="time-box">
+                                <div class="number-wrapper">
+                                    <span class="current hours">00</span>
+                                    <span class="next hours">00</span>
+                                </div>
+                                <span class="label">Óra</span>
+                            </div>
+                            <div class="time-box">
+                                <div class="number-wrapper">
+                                    <span class="current minutes">00</span>
+                                    <span class="next minutes">00</span>
+                                </div>
+                                <span class="label">Perc</span>
+                            </div>
+                            <div class="time-box">
+                                <div class="number-wrapper">
+                                    <span class="current seconds">00</span>
+                                    <span class="next seconds">00</span>
+                                </div>
+                                <span class="label">Mp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="regForm">
+                <p class="guest-box-first" id="guestBox">
+                    <label class="form-label text-purple nonreg-customer-name pb-7" for="guestName"
+                        id="guestNameLabel">Vendéged
+                        neve:</label>
+                    <!-- <span class="material-icons text-purple" id="regIcon">face</span> -->
+                    <input type="text" id="guestName" class="form-control" value="">
+                    <span id="guestErrorMessage" class="input-error-message d-block pt-7 pb-10"></span>
+                    <span id="guestBoxInfo"></span>
+
+                </p>
+                <div id="gdpr"></div>
+                <div id="regActions">
+                </div>
+                <br>
+            </form>
+            <div id="closedRegBox"></div>
+            <div class="d-flex" id="messageOnSubmit"></div>
+            <br>
+            <div>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/S28_4qTiCLk?si=lBKenQre7iwbjUbQ&rel=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <span id="eventDate" class="small-font d-block pt-20"><strong>Következő előadások: </strong><br>
+                <mark class="past-presentation"><span class="past-presentation-text">1. Február 1. (szombat),
+                        Budapest</span></mark>
+                <i class="past-presentation-text"><span>Vírusok a környezetünkben, vírusok a
+                        szervezetünkben...</span></i>
+                <br>
+                <mark class="past-presentation"><span class="past-presentation-text">2. Február 22. (szombat),
+                        Budapest</span></mark>
+                <i class="past-presentation-text"><span>Akut és krónikus gyulladások, gócok a szervezetben</span></i>
+                <br>
+                <mark class="past-presentation"><span class="past-presentation-text">3. Március 22. (szombat),
+                        Budapest</span></mark>
+                <i class="past-presentation-text">Új civilizációs ellenség: Az Ételintolerancia</i>
+                <br>
+                <mark class="past-presentation"><span class="past-presentation-text">4. Április 26. (szombat),
+                        Budapest</mark>
+                <i class="past-presentation-text">Szív küldi szívnek! Őszintén a szív-és érrendszeri betegségekről</i>
+                <br>
+                <mark><strong>5. Május 10. (szombat), Budapest</strong></mark>
+                <i>Well-aging; tudatos fiatalság kívül-belül</i>
+                <br>
+                <mark>6. Szeptember 20. (szombat), Budapest</mark>
+                <i>Kisgyermekek "nagybajai"... Segítség édesanyáknak és kezdő nagyiknak</i>
+                <br>
+                <mark>7. Október 11. (szombat), Budapest</mark>
+                <i>Tanuld meg szeretni a baktériumokat!</i>
+                <br>
+                <mark>8. November 8. (szombat), Budapest</mark>
+                <i>Hidegben az ízületek is nehezebben indulnak... Prevenció és terápia mozgásszervi panaszok
+                    esetén</i>
+                <br>
+                <mark>9. November 29. (szombat), Budapest</mark>
+                <i>Nehézfémek a környezetünkben, nehézfémek a szervezetünkben</i>
+                <br>
+                <mark class="last-presentation-text">10. December 6. (szombat), Szeged</mark>
+                <i>Ne legyen immunrendszered a civilizáció áldozata! Használd okosan a
+                    táplálékkiegészítőket!</i>
+            </span>
+
+
+            <div class="footer">
+                <hr>
+                <div>
+                    Telefon: <a href="tel:+36202627288"> +36 20 262-7288</a> | E-mail: <a
+                        href="mailto:iroda@nics.hu">iroda@nics.hu</a>
+                </div>
+                <div>
+                    <span class="icon"><a href="https://www.facebook.com/Natural.Immune.Control.System"><i
+                                class="fab fa-facebook"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
